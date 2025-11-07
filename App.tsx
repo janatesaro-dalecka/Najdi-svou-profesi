@@ -1,7 +1,6 @@
-
 import React, { useState, useMemo } from 'react';
-import { skills, professions } from './data.ts';
-import { Skill, ProfessionResult } from './types.ts';
+import { skills, professions } from './data';
+import { Skill, ProfessionResult } from './types';
 
 const MAX_SKILLS = 5;
 

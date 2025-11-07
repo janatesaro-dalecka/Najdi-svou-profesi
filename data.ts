@@ -1,5 +1,5 @@
-import { Skill, Profession } from './types.ts';
-import { OstrahaImage, PravnikImage, ManazerImage, KucharImage, MarketingovyExpertImage, EkonomImage, ItExpertImage, StatistikImage } from './components/images.tsx';
+import { Skill, Profession } from './types';
+import { OstrahaImage, PravnikImage, ManazerImage, KucharImage, MarketingovyExpertImage, EkonomImage, ItExpertImage, StatistikImage } from './components/images';
 
 export const skills: Skill[] = [
   "komunikační dovednosti",
