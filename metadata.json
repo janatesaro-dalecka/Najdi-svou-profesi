@@ -1,0 +1,5 @@
+{
+  "name": "V2_Najdi svou profesi",
+  "description": "Objevte profese, které nejlépe odpovídají vašim dovednostem. Vyberte si 5 dovedností ze seznamu 15 a aplikace vám doporučí ideální profesní dráhu na základě nejvyššího počtu shodných dovedností.",
+  "requestFramePermissions": []
+}
