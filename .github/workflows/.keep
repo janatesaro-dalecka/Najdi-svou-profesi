@@ -1,1 +1,32 @@
+name: Deploy React App to Firebase Hosting
 
+on:
+  push:
+    branches:
+      - main  # nebo master, podle tvé hlavní větve
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repozitáře
+      - uses: actions/checkout@v3
+
+      # 2. Setup Node.js (server GitHub Actions)
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 3. Instalace závislostí
+      - run: npm install
+
+      # 4. Build React aplikace
+      - run: npm run build
+
+      # 5. Deploy na Firebase Hosting
+      - uses: FirebaseExtended/action-hosting-deploy@v1
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          projectId: "Najdi-svou-profesi"
+          channelId: "live"
